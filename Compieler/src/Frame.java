@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Frame extends javax.swing.JFrame {
 
 	/**
@@ -132,7 +134,11 @@ public class Frame extends javax.swing.JFrame {
 
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) throws TokenizerError {// GEN-FIRST:event_jButton1ActionPerformed
 		Tokenizer t = new Tokenizer(this);
-		t.start();
+		TokenList list = t.start();
+		
+		Compiler c = new Compiler(this, list);
+		c.start();
+		
 	}// GEN-LAST:event_jButton1ActionPerformed
 
 	public String get() {

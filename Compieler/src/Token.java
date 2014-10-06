@@ -45,6 +45,7 @@ public class Token {
 		FUNCTION("function"),
 		IF("if"),
 		ELSE("else"),
+		WHILE("while"),
 		STRING("string"),
 		DIGIT("digit"),
 		OPERATOR("operator"),

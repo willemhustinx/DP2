@@ -122,6 +122,9 @@ public class Tokenizer {
 								current.setNext(new TokenList(new Token(Token.TokenEnum.FUNCTION, token, line, startPos,
 										level)));
 								current = current.next;
+							} else if (token.toLowerCase().equals("while")) {
+								current.setNext(new TokenList(new Token(Token.TokenEnum.WHILE, token, line, startPos, level)));
+								current = current.next;
 							} else {
 								current.setNext(new TokenList(new Token(Token.TokenEnum.STRING, token, line, startPos,
 										level)));

@@ -1,7 +1,9 @@
+package Tokenizer;
 
 public class TokenList {
-	Token t;
-	TokenList next, prev;
+	public Token t;
+	public TokenList next;
+	public TokenList prev;
 	
 	public TokenList(Token t)
 	{

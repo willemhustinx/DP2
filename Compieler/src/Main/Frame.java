@@ -1,4 +1,9 @@
-import java.util.List;
+package Main;
+import Compiler.Compiler;
+import Compiler.CompilerError;
+import Tokenizer.TokenList;
+import Tokenizer.Tokenizer;
+import Tokenizer.TokenizerError;
 
 public class Frame extends javax.swing.JFrame {
 
@@ -34,7 +39,7 @@ public class Frame extends javax.swing.JFrame {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				try {
 					jButton1ActionPerformed(evt);
-				} catch (TokenizerError e) {
+				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
@@ -132,7 +137,7 @@ public class Frame extends javax.swing.JFrame {
 		pack();
 	}// </editor-fold>//GEN-END:initComponents
 
-	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) throws TokenizerError {// GEN-FIRST:event_jButton1ActionPerformed
+	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) throws TokenizerError, CompilerError {// GEN-FIRST:event_jButton1ActionPerformed
 		Tokenizer t = new Tokenizer(this);
 		TokenList list = t.start();
 		

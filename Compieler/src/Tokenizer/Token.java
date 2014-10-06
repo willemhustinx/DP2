@@ -1,3 +1,4 @@
+package Tokenizer;
 public class Token {
     String text;
     int level;
@@ -5,7 +6,7 @@ public class Token {
     int pos;
     String partner;
     TokenEnum partnerEnum;
-    TokenEnum token;
+    public TokenEnum token;
     
     public Token(TokenEnum token, String text, int level, int regel, int pos, TokenEnum partnerEnum, String partner)
     {
@@ -35,7 +36,6 @@ public class Token {
     	r += token.getToken().toUpperCase();
     	r += ", " + text;
     	r += " )";
-    	r += "\n";
     	
     	return r;
     }

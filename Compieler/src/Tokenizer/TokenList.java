@@ -4,6 +4,7 @@ public class TokenList {
 	public Token t;
 	public TokenList next;
 	public TokenList prev;
+	public TokenList partner;
 	
 	public TokenList(Token t)
 	{
@@ -26,6 +27,10 @@ public class TokenList {
 		String r = "";
 		
 		r += this.t.toString();
+		if(this.partner != null)
+		{
+			r += "partner: " + this.partner.t.toString();
+		}
 		r += "\n";
 		
 		if(this.next != null)

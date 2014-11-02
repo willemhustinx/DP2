@@ -48,7 +48,7 @@ public class Frame extends javax.swing.JFrame {
 
 		jTextAreaIn.setColumns(20);
 		jTextAreaIn.setRows(5);
-		jTextAreaIn.setText("function Ding () {\n\t if(3 == 3) { \n\t\t x = 3; \n\t }\n}");
+		jTextAreaIn.setText("function Ding () {\n\t if(3 == 3) { \n\t\t x = 3; \n\t }\n\telse\n\t{\n\t\t x = 4;\n\t}\n}");
 		jScrollPane3.setViewportView(jTextAreaIn);
 
 		jTextAreaOut.setColumns(20);

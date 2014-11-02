@@ -4,22 +4,9 @@ public class Token {
     int level;
     int regel;
     int pos;
-    String partner;
-    TokenEnum partnerEnum;
     public TokenEnum token;
     
-    public Token(TokenEnum token, String text, int level, int regel, int pos, TokenEnum partnerEnum, String partner)
-    {
-    	this.token = token;
-    	this.text = text;
-    	this.level = level;
-    	this.regel = regel;
-    	this.pos = pos;
-    	this.partnerEnum = partnerEnum;
-    	this.partner = partner;
-    }
-    
-    public Token(TokenEnum token, String text, int level, int regel, int pos)
+    public Token(TokenEnum token, String text, int regel, int pos, int level)
     {
     	this.token = token;
     	this.text = text;
@@ -33,8 +20,9 @@ public class Token {
     	String r;
     	
     	r = "TOKEN( ";
-    	r += token.getToken().toUpperCase();
+    	r += token.toString();
     	r += ", " + text;
+    	r += ", " + level;
     	r += " )";
     	
     	return r;

@@ -1,15 +1,2 @@
-/Compiler.class
-/Copieler.class
-/Frame$1.class
-/Frame.class
-/Token$TokenEnum.class
-/Token.class
-/TokenList.class
-/Tokenizer.class
-/TokenizerError.class
-/ifCompiler.class
-/CompilerIf.class
-/CompilerError.class
-/Compiler/
 /Tokenizer/
 /Main/

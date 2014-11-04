@@ -49,6 +49,9 @@ public class Frame extends javax.swing.JFrame {
 		jTextAreaIn.setColumns(20);
 		jTextAreaIn.setRows(5);
 		jTextAreaIn.setText("function Ding () {\n\t if(3 == 3) { \n\t\t x = 3; \n\t }\n\telse\n\t{\n\t\t x = 4;\n\t}\n}");
+		
+		jTextAreaIn.setText("x = 10;\n\nif(x < 5)\n{\n\tx = 1;\n}");
+		
 		jScrollPane3.setViewportView(jTextAreaIn);
 
 		jTextAreaOut.setColumns(20);
@@ -138,6 +141,7 @@ public class Frame extends javax.swing.JFrame {
 	}// </editor-fold>//GEN-END:initComponents
 
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) throws TokenizerError, CompilerError {// GEN-FIRST:event_jButton1ActionPerformed
+		
 		Tokenizer t = new Tokenizer(this);
 		TokenList list = t.start();
 		

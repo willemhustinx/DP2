@@ -239,6 +239,16 @@ public class Tokenizer {
 				current = current.next;
 				token = "";
 			}
+			
+			else if (c == '<') {
+				token += c;
+				startPos = positie;
+
+				current.setNext(new TokenList(new Token(
+						Token.TokenEnum.OPERATOR, token, line, startPos, level)));
+				current = current.next;
+				token = "";
+			}
 
 			else if (c != ' ') {
 				throw new TokenizerError("fout met tokenizer op r" + line + "@"

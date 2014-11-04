@@ -23,6 +23,7 @@ public class Token {
     	r += token.toString();
     	r += ", " + text;
     	r += ", " + level;
+    	r += ", " + regel + "@" + pos;
     	r += " )";
     	
     	return r;

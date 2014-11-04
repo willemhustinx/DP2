@@ -10,7 +10,8 @@ public class CompilerIf extends Compiler {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void start() throws CompilerError
+	/*
+	public void start()// throws CompilerError
 	{
 		TokenList current = t;
 		
@@ -84,7 +85,8 @@ public class CompilerIf extends Compiler {
 		{
 			throw new CompilerError("Missing condition from if statement");
 		}
-		
 	}
-
+	*/
+		
 }
+
